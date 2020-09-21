@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- 解决Android P上明文传输不能连接网络的问题-->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".moudle.moments.MomentsActivity">
+
+    <com.lee.wechat.customview.CustomRecyclerView
+        android:id="@+id/rlv_moments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_FF" />
+
+    <ImageView
+        android:id="@+id/iv_refresh"
+        android:layout_width="@dimen/dp_23"
+        android:layout_height="@dimen/dp_23"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_70"
+        android:visibility="gone"
+        android:background="@mipmap/icon_moments_refresh"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rv_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/transparent">
+
+        <RadioButton
+            android:id="@+id/rb_moments_back"
+            android:layout_width="@dimen/dp_21"
+            android:layout_height="@dimen/dp_21"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:background="@drawable/back_selector"
+            android:button="@null"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/tv_moments_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Moments"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <RadioButton
+            android:id="@+id/rb_camera"
+            android:layout_width="@dimen/dp_21"
+            android:layout_height="@dimen/dp_21"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_8"
+            android:background="@drawable/camera_selector"
+            android:button="@null"
+            android:checked="true"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+
+</FrameLayout>
